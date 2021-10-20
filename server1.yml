@@ -4,12 +4,12 @@
   tasks:
   - name: install websever on ubuntu ansible nodes
     yum:
-      name: httpd
+      name: "{{httpdinstaller}}"
       state: present
     when: ansible_os_family=="RedHat"
 
   - name: install java on linux server
     yum:
-       name: java-1.8.0-openjdk
+       name: "{{javainstaller}}"
        state: present
     when: ansible_os_family=="RedHat"

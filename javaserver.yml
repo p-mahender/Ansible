@@ -8,6 +8,12 @@
       state: present
     when: ansible_os_family=="RedHat"
 
+  - name: uninstall apche server on ubuntu
+    apt:
+      name: apache2
+      state: absent
+    when: ansible_os_family=="Debian"
+
   - name: install apche server on ubuntu
     apt:
       name: apache2

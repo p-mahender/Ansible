@@ -8,8 +8,13 @@
       state: present
     when: ansible_os_family=="RedHat"
 
-  - name: i want to install java on ubuntu
+  - name: install apche server on ubuntu
     apt:
-      name: openjdk-8-jdk
+      name: apache2
       state: present
     when: ansible_os_family=="Debian" 
+
+  - name: run apache server on ubuntu
+    service:
+      name: apache2
+      state: started

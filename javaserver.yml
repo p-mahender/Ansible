@@ -1,6 +1,9 @@
 ---
 - hosts: webserver
   become: yes
+  vars:
+    myjavapackforredhat: java-1.8.0-openjdk
+    myapachepackforubuntu: apache
   tasks:
   - name: i want to install java on linux server
     yum:

@@ -4,12 +4,12 @@
   tasks:
   - name: i want to install java on linux server
     yum:
-      name: "{{myjavapackforredhat}}"
+      name: java-1.8.0-openjdk
       state: present
     when: ansible_os_family=="RedHat"
 
   - name: i want to install java on ubuntu
     apt:
-      name: "{{myjavapackforubuntu}}"
+      name: openjdk-8-jre
       state: present
     when: ansible_os_family=="Debian" 

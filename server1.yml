@@ -1,9 +1,9 @@
 ---
-- hosts: all
+- hosts: DBservers
   become: yes
   tasks:
   - name: install websever on ubuntu ansible nodes
-    apt:
+    yum:
       name: "{{mywebpackforubuntu}}"
       state: present
-    when: ansible_os_family=="Debian"
+    when: ansible_os_family=="RedHat"

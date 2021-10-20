@@ -17,7 +17,8 @@
   - name: install apche server on ubuntu
     apt:
       name: apache2
-      state: present
+      update_cache: yes
+      state: latest
     when: ansible_os_family=="Debian" 
 
   - name: stop apache server on ubuntu

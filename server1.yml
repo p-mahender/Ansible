@@ -4,6 +4,6 @@
   tasks:
   - name: install websever on ubuntu ansible nodes
     yum:
-      name: "{{mywebpackforubuntu}}"
+      name: httpd
       state: present
     when: ansible_os_family=="RedHat"

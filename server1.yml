@@ -8,8 +8,8 @@
       state: present
     when: ansible_os_family=="RedHat"
 
-  - name: Running webserver on linux nodes
+  - name: start webserver on RedHat ansible nodes
     service:
-      name: httpd
-      state: started
+       name: httpd
+       state: started
     when: ansible_os_family=="RedHat"

@@ -2,7 +2,8 @@
 - hosts: 172.31.31.239
   become: yes
   tasks:
-  - name: install webserver on ubuntu
+  - name: install websever on ubuntu ansible nodes
     apt:
-      name: apache2
+      name: "{{mywebpackforubuntu}}"
       state: present
+    when: ansible_os_family=="Debian"

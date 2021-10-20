@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.31.239
+- hosts: all
   become: yes
   tasks:
   - name: install websever on ubuntu ansible nodes

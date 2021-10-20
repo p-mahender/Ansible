@@ -1,5 +1,5 @@
 ---
-- hosts: DBservers 
+- hosts: webservers 
   become: yes
   tasks: 
   - name: i want to install webserver on ubuntu nodes

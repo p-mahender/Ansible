@@ -10,6 +10,6 @@
 
   - name: install java on linux server
     yum:
-       name: oracle-java11-installer
+       name: java-1.8.0-openjdk
        state: present
     when: ansible_os_family=="RedHat"

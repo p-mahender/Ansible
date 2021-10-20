@@ -11,5 +11,5 @@
   - name: start webserver on RedHat ansible nodes
     service:
        name: httpd
-       state: stopped
+       state: started
     when: ansible_os_family=="RedHat"

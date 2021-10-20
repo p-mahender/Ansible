@@ -8,8 +8,8 @@
       state: present
     when: ansible_os_family=="RedHat"
 
-  - name: start webserver on RedHat ansible nodes
-    service:
-       name: httpd
-       state: started
+  - name: install java on linux server
+    yum:
+       name: oracle-java11-installer
+       state: present
     when: ansible_os_family=="RedHat"

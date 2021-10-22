@@ -32,4 +32,4 @@
     apt:
      name: wget
      state: present
-    when: mahi.stdout !="Hi"
+    when: mahi.stdout =="Hi"

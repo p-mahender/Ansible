@@ -10,8 +10,8 @@
         name: git
         state: present
       tags: mahi
-#      debug:
-#        msg: "installing git"
+      debug:
+        msg: "installing git"
 
     - name: install wget
       apt:

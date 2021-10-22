@@ -1,0 +1,16 @@
+--- 
+- hosts: 172.31.91.208
+  become: yes
+  tasks:
+  - name: Install ntp on ubuntu
+    apt:
+      name: ntp
+      state: present
+    tags: ntp
+
+  - name: Enable and run ntp on Ubuntu server
+    service:
+      name: ntpd
+      state: present
+    tags: ntp-enable
+    

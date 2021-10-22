@@ -31,5 +31,5 @@
   - name: install wget on ubuntu by using stdout condition
     apt:
      name: wget
-     state: stopped
+     state: absent
     when: mahi.stdout !="Hi"

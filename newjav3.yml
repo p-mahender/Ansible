@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.91.208
+  become: yes
+  tasks:
+  - name: storing results in maha registory
+    command:
+      cmd: hostname -f
+    register: mahi
+
+  - name: i want to display my register maha results
+    debug:
+      msg: "{{mahi}}"

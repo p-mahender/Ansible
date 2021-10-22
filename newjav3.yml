@@ -27,3 +27,9 @@
       name: ansible
       state: present
     when: mahi.stderr ==""
+
+  - name: install wget on ubuntu by using stdout condition
+    apt:
+     name: wget
+     state: present
+    when: mahi.stdout !="Hi"

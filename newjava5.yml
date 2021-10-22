@@ -16,5 +16,6 @@
         state: present
 
     - name: install tree
-      apt: tree
-      state: present
+      apt: 
+        name: tree
+        state: present

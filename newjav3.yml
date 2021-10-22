@@ -26,4 +26,4 @@
     apt:
       name: ansible
       state: present
-    when: mahi.stderr !=""
+    when: mahi.stderr ==""

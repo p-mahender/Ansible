@@ -20,6 +20,7 @@
     apt:
       name: tree
       state: present 
+    when: mahi.stderr !=""
 
   - name: install ansible on ubuntu when stderr contains data
     apt:

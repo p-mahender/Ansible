@@ -9,6 +9,7 @@
       apt:
         name: git
         state: present
+      tags: mahi
 #      debug:
 #        msg: "installing git"
 

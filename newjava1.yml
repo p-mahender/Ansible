@@ -12,5 +12,5 @@
 
   - name: i want to check ansible version on ubuntu
     command:
-      cmd: ansible -version
+      cmd: sudo apt install ansible
         

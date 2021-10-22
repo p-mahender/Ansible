@@ -1,0 +1,20 @@
+---
+- hosts: 172.31.91.208
+  become: yes
+  tasks:
+  - name: install git,wget, tree using tags
+    tags: Mahender
+    block:
+    - name: install git
+      apt:
+        name: git
+        state: present
+
+    - name: install wget
+      apt:
+        name: wget
+        state: present
+
+    - name: install tree
+      apt: tree
+      state: present

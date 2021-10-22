@@ -5,3 +5,8 @@
   - name: i want to execute ubuntu command
     command:
       cmd: hostname -f
+
+  - name: i want to check java version on ubuntu
+    command:
+      cmd: java -version
+        

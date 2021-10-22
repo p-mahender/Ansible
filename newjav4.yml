@@ -7,6 +7,14 @@
       name: ntp
       state: present
     tags: ntp
+  
+  - name: Configure ntp
+    ansible.builtin.template:
+      src: ntp.conf.j2
+      dest: /etc/ntp.conf
+    notify:
+    - restart ntpd
+    tags: ntp-config
 
   - name: Enable and run ntp on Ubuntu server
     service:

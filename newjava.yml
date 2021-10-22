@@ -2,7 +2,7 @@
 - hosts: webserver
   become: yes
   vars:
-    myjavapackforubuntu: openjdk-14-jre-headless
+    myjavapackforubuntu: openjdk-14-jdk-headless
   tasks:
   - name: i want to install java on linux
     yum:

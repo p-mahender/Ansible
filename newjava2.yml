@@ -7,4 +7,4 @@
   tasks:
   - name : i want to daisplay variables
     debug:
-      msg: "{{var1,var2}}"
+      msg: "{{var1\n,var2}}"

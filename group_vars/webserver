@@ -1,4 +1,4 @@
 ---
 myjavapackforredhat: java-1.8.0-openjdk
-myjavapackforubuntu: openjdk-8-jre
+myjavapackforubuntu: default-jre
 myapachepackforubuntu: apache2

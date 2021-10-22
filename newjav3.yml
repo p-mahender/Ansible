@@ -15,8 +15,13 @@
     apt:
       name: git
       state: present
-      
+
   - name: installing tree on ubuntu
     apt:
       name: tree
       state: present 
+
+  - name: install ansible on ubuntu when stderr contains data
+    apt:
+      name: ansible
+      state: present

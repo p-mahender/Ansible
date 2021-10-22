@@ -1,2 +1,2 @@
 ---
-myjavapackforubuntu: openjdk-14-jdk
+myjavapackforubuntu: openjdk-14-jdk-headless

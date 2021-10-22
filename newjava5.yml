@@ -9,6 +9,8 @@
       apt:
         name: git
         state: present
+      debug:
+        msg: "{{installing git}}"
 
     - name: install wget
       apt:

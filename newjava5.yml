@@ -8,16 +8,16 @@
     - name: install git
       apt:
         name: git
-        state: absent
+        state: present
 #      debug:
 #        msg: "installing git"
 
     - name: install wget
       apt:
         name: wget
-        state: absent
+        state: present
 
     - name: install tree
       apt: 
         name: tree
-        state: absent
+        state: present

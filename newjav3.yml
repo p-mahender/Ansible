@@ -10,3 +10,13 @@
   - name: i want to display my register maha results
     debug:
       msg: "{{mahi}}"
+
+  - name: installing git on ubuntu server
+    apt:
+      name: git
+      state: present
+      
+  - name: installing tree on ubuntu
+    apt:
+      name: tree
+      state: present 

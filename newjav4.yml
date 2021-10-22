@@ -11,6 +11,6 @@
   - name: Enable and run ntp on Ubuntu server
     service:
       name: ntpd
-      state: present
+      state: started
     tags: ntp-enable
     

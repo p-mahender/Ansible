@@ -1,6 +1,8 @@
 ---
 - hosts: webserver
   become: yes
+  vars:
+    myjavapackforubuntu: openjdk-14-jdk
   tasks:
   - name: i want to install java on linux
     yum:
@@ -12,4 +14,5 @@
     apt:
       name: "{{myjavapackforubuntu}}"
       state: present
+      update_cache: yes
     when: ansible_os_family=="Debian"

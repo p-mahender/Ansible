@@ -9,4 +9,8 @@
   - name: i want to check java version on ubuntu
     command:
       cmd: java -version
+
+  - name: i want to check ansible version on ubuntu
+    command:
+      cmd: ansible -version
         

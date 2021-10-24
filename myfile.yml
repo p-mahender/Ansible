@@ -2,7 +2,7 @@
 - hosts: webserver
   become: yes
   tasks:
-  - include: /home/maha/Ansible/installapach2.yml
+  - include: /home/maha/Ansible/installapache2.yml
 #  - include: /home/maha/Ansible/installgit.yml
 #  - include: /home/maha/Ansible/installtree.yml
 #  - include: /home/maha/Ansible/installwget.yml

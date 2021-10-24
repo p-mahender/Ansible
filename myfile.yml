@@ -2,7 +2,7 @@
 - hosts: webserver
   become: yes
   tasks:
-  - include_tasks: installapach2.yml
+#  - include_tasks: installapach2.yml
   - include_tasks: installgit.yml
   - include_tasks: installtree.yml
   - include_tasks: installwget.yml

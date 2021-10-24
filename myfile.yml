@@ -2,23 +2,12 @@
 - hosts: webserver
   become: yes
   tasks:
-  - name: i want to create a file on Node
-    file:
-      path: /home/maha/mytestfile
-      state: touch
-  - name: i want to install webserver
-    apt: 
-      name: apache2
-      state: present
-  - name: i want to install git 
-    apt:
-      name: git
-      state: present
-  - name: i want to install tree
-    apt:
-      name: tree
-      state: present
-  - name: i want to install wget
-    apt: 
-      name: wget
-      state: present
+  - include_tasks: installapach2.yml
+  - include_tasks: installgit.yml
+  - include_tasks: installtree.yml
+  - include_tasks: installwget.yml
+  - include_tasks: createfile.yml
+  
+  
+  
+ 

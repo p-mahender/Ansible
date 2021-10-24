@@ -1,0 +1,5 @@
+---
+- name: i want to create a file on Node
+  file:
+    path: /home/maha/mytestfile
+    state: touch

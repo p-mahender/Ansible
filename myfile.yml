@@ -7,10 +7,10 @@
   - include: /home/maha/Ansible/installtree.yml
   - include: /home/maha/Ansible/installwget.yml
   - include: /home/maha/Ansible/createfile.yml
-  - name: i want to install tree
-    apt:
-      name: tree
-      state: present
+  - name: i want to replace index page of apache server
+    template:
+      src: /home/maha/Ansible/myindexfile.j2
+      dest: /var/www/html/index.html
  
   
   

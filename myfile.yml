@@ -2,11 +2,11 @@
 - hosts: webserver
   become: yes
   tasks:
-  - include: /home/maha/Ansible/installapache2.yml
-  - include: /home/maha/Ansible/installgit.yml
-  - include: /home/maha/Ansible/installtree.yml
-  - include: /home/maha/Ansible/installwget.yml
-  - include: /home/maha/Ansible/createfile.yml
+ # - include: /home/maha/Ansible/installapache2.yml
+ # - include: /home/maha/Ansible/installgit.yml
+ # - include: /home/maha/Ansible/installtree.yml
+ # - include: /home/maha/Ansible/installwget.yml
+ # - include: /home/maha/Ansible/createfile.yml
   - name: i want to replace index page of apache server
     template:
       src: /home/maha/Ansible/myindexfile.j2

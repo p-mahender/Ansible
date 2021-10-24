@@ -2,10 +2,10 @@
 - hosts: webserver
   become: yes
   tasks:
-#  - include_tasks: installapach2.yml
-#  - include_tasks: installgit.yml
-#  - include_tasks: installtree.yml
-#  - include_tasks: installwget.yml
+  - include: installapach2.yml
+  - include: installgit.yml
+  - include: installtree.yml
+  - include: installwget.yml
   - include: createfile.yml
   - name: i want to install tree
     apt:

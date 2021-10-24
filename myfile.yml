@@ -2,11 +2,11 @@
 - hosts: webserver
   become: yes
   tasks:
-  - include: installapach2.yml
-  - include: installgit.yml
-  - include: installtree.yml
-  - include: installwget.yml
-  - include: createfile.yml
+  - include_tasks: /home/maha/Ansible/installapach2.yml
+  - include_tasks: /home/maha/Ansible/installgit.yml
+  - include_tasks: /home/maha/Ansible/installtree.yml
+  - include_tasks: /home/maha/Ansible/installwget.yml
+  - include_tasks: /home/maha/Ansible/createfile.yml
   - name: i want to install tree
     apt:
       name: tree

@@ -3,10 +3,10 @@
   become: yes
   tasks:
   - include: /home/maha/Ansible/installapach2.yml
-  - include: /home/maha/Ansible/installgit.yml
-  - include: /home/maha/Ansible/installtree.yml
-  - include: /home/maha/Ansible/installwget.yml
-  - include: /home/maha/Ansible/createfile.yml
+#  - include: /home/maha/Ansible/installgit.yml
+#  - include: /home/maha/Ansible/installtree.yml
+#  - include: /home/maha/Ansible/installwget.yml
+#  - include: /home/maha/Ansible/createfile.yml
   - name: i want to install tree
     apt:
       name: tree

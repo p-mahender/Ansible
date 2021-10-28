@@ -1,7 +1,7 @@
 ---
 - name: update the ubuntu server
   apt:
-    name: foo
+    
     update_cache: yes
     
     

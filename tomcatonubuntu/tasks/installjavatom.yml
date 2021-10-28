@@ -3,10 +3,9 @@
   apt:
     name: foo
     update_cache: yes
-    when: ansible_os_family=="Debian"
+    
     
 - name: installing java on ubuntu
   apt:
     name: default-jdk
     state: present
-  when: ansible_os_family=="Debian"

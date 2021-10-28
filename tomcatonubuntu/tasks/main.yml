@@ -3,3 +3,5 @@
 - include_tasks: /home/maha/Ansible/tomcatonubuntu/tasks/installjavatom.yml
 - include_tasks: /home/maha/Ansible/tomcatonubuntu/tasks/createtomuser.yml
 - include_tasks: /home/maha/Ansible/tomcatonubuntu/tasks/downloadtomcat.yml
+
+

@@ -1,0 +1,5 @@
+---
+- name: copy tomcat service file into node
+  template:
+  src: /home/maha/Ansible/tomcatonubuntu/templates/mytomconfig.j2
+  dest: /etc/systemd/system/tomcat.service

@@ -1,0 +1,15 @@
+---
+- name: editing the tomcat-users.xml file
+  template:
+    src: /home/maha/Ansible/tomcatonubuntu/templates/mytomuser.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: For the Manager app
+  template:
+    src: /home/maha/Ansible/tomcatonubuntu/templates/mytomcontext.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: For the Host Manager app
+  template:
+    src: /home/maha/Ansible/tomcatonubuntu/templates/mytomhostcontext.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml

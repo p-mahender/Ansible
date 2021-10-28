@@ -5,7 +5,7 @@
 #- include: /home/maha/Ansible/tomcatonubuntu/tasks/downloadtomcat.yml
 #- include: /home/maha/Ansible/tomcatonubuntu/tasks/updatepermission.yml
 #- include: /home/maha/Ansible/tomcatonubuntu/tasks/servicefile.yml
-- include: /home/maha/Ansible/tomcatonubuntu/tasks/myjavatemplate.yml
+- include_tasks: /home/maha/Ansible/tomcatonubuntu/tasks/myjavatemplate.yml
 - include: /home/maha/Ansible/tomcatonubuntu/tasks/tomcatrestart.yml
 - include: /home/maha/Ansible/tomcatonubuntu/tasks/webmanagement.yml
 - include: /home/maha/Ansible/tomcatonubuntu/tasks/mytomrestart.yml

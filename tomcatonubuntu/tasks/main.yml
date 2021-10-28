@@ -1,10 +1,10 @@
 ---
 # tasks file for tomcatonubuntu
-- include: /home/maha/Ansible/tomcatonubuntu/tasks/installjavatom.yml
-- include: /home/maha/Ansible/tomcatonubuntu/tasks/createtomuser.yml
-- include: /home/maha/Ansible/tomcatonubuntu/tasks/downloadtomcat.yml
-- include: /home/maha/Ansible/tomcatonubuntu/tasks/updatepermission.yml
-- include: /home/maha/Ansible/tomcatonubuntu/tasks/servicefile.yml
+#- include: /home/maha/Ansible/tomcatonubuntu/tasks/installjavatom.yml
+#- include: /home/maha/Ansible/tomcatonubuntu/tasks/createtomuser.yml
+#- include: /home/maha/Ansible/tomcatonubuntu/tasks/downloadtomcat.yml
+#- include: /home/maha/Ansible/tomcatonubuntu/tasks/updatepermission.yml
+#- include: /home/maha/Ansible/tomcatonubuntu/tasks/servicefile.yml
 - include: /home/maha/Ansible/tomcatonubuntu/tasks/javatemplate.yml
 - include: /home/maha/Ansible/tomcatonubuntu/tasks/tomcatrestart.yml
 - include: /home/maha/Ansible/tomcatonubuntu/tasks/webmanagement.yml
